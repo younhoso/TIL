@@ -4,28 +4,28 @@ Ajax로 서버에 request를 보낼때 다음과 같이 `new FormData()`로 데�
 ```javascript
 // index.js
 function posting() {
-		const title = $('#title').val();
-		const content = $('#content').val();
+	const title = $('#title').val();
+	const content = $('#content').val();
 
-		const file = $('#file')[0].files[0]
-		const form_data = new FormData()
+	const file = $('#file')[0].files[0]
+	const form_data = new FormData()
 
-		form_data.append("file_give", file)
-		form_data.append("title_give", title)
-		form_data.append("content_give", content)
+	form_data.append("file_give", file)
+	form_data.append("title_give", title)
+	form_data.append("content_give", content)
 
-		$.ajax({
-				type: "POST",
-				url: "/diary",
-				data: form_data,
-				cache: false,
-				contentType: false,
-				processData: false,
-				success: function(response){
-						alert(response['msg'])
-						window.location.reload()
-				}
-		})
+	$.ajax({
+		type: "POST",
+		url: "/diary",
+		data: form_data,
+		cache: false,  //default로 false 사용
+		contentType: false, //default로 false 사용
+		processData: false, //default로 false 사용
+		success: function(response){
+				alert(response['msg'])
+				window.location.reload()
+		}
+	})
 };
 ```
 ```python
