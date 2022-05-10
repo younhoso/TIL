@@ -40,7 +40,7 @@ sudo apt update
 결과)👇
 
 저는 업데이트를 성공했는데 다시 패키지 업데이터를 할수 있다고 나옵니다.
-<img src="../images/TodayError/ubuntu_update_error01.png">
+<img src="../images/today-error/ubuntu_update_error01.png">
 
 그래서 위와 같이 패키지를 모두 업그레이드함.
-<img src="../images/TodayError/ubuntu_update_error02.png">
+<img src="../images/today-error/ubuntu_update_error02.png">
