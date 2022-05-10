@@ -38,6 +38,7 @@ sudo dpkg --configure -a
 sudo apt update
 ```
 결과)👇
+
 저는 업데이트를 성공했는데 다시 패키지 업데이터를 할수 있다고 나옵니다.
 <img src="../images/TodayError/ubuntu_update_error01.png">
 
