@@ -27,6 +27,7 @@ def detail(keyword): #인자로 keyword를 받는다.
 ```
 http://127.0.0.1:5000/detail/검색keyword
 ```
+html에서 word라는 변수로 받아서 화면에 노출수있습니다.
 ```html
 ...
 <h3>받은 단어는: {{word}}</h3>
