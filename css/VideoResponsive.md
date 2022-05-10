@@ -9,8 +9,8 @@
 ```
 ```html
 <div class="video">
-		<div>
-				<iframe src="https://www.youtube.com/embed/6lkLE3bSrMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
+	<div>
+		<iframe src="https://www.youtube.com/embed/6lkLE3bSrMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
 </div>
 ```
