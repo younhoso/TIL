@@ -20,7 +20,6 @@ http://127.0.0.1:5000/detail/?word_give=hi
 ```python
 @app.route('/detail/<keyword>')
 def detail(keyword): #인자로 keyword를 받는다.
-	word_receive = request.args.get('word_give')
 	return render_template("detail.html", rows=rows, word=keyword) #keyword를 word에 담아 보내주는 상황
 ```
 브라우저 주소 입력란에 /detail/`검색keyword`만 별도로 서버에 요청할수 있습니다. 
