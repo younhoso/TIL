@@ -36,13 +36,11 @@ function solution(s){
     for(let i = 0; i <s.length; i++){
         if(str[i] === "p") {
             count++;
-            console.log(count)
         }else if(str[i] === "y") {
             count--;
-            console.log(count)
         }
     }
-    return count === 0 ? true : false // count === 0면 'p', 'y' 개수 비교해 같다라는 의미
+    return count === 0 ? true : false // count === 0면 'p', 'y' 개수가 같다라는 의미
 }
 ```
 
