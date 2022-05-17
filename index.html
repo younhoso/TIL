@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		function solution(s){
+			return s.toUpperCase().replace(/(\w)(\w)/g, function(a){
+				return a[0].toUpperCase()+a[1].toLowerCase(); // (\w)(\w)로 모든 문자열을 찾아, 홀수 번째 알파벳과, 짝수 번째 알파벳을 연결하여 리턴 합니다.
+			});
+		}
+
+		// 아래는 테스트로 출력해 보기 위한 코드입니다.
+		console.log("결과 : " + solution("try hello world"));
+	</script>
+</body>
+</html>
