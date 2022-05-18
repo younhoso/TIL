@@ -9,17 +9,20 @@
 <body>
 	
 	<script>
-		function solution(datas){
-			const current = datas.indexOf(4) //indexOf는 특정 원소의 위치를 탐색
-			const next = (datas.length -1 !== current) ? (current + 1) % datas.length : null
-			const prev = current - 1;
-
-			console.log(datas[prev])
-			console.log(datas[next])
+		function solution(n) { 
+			let answer = "0";
+			for(let i = 0; i < n.length; i++){
+				if(i === 1 || i === 5){
+					answer += n.charAt(i) + "-"; //charAt는 함수는 문자열에서 특정 인덱스에 위치하는 문자를 반환
+				} else {
+					answer += n.charAt(i)
+				}
+			}
+			return answer
 		}
 
 		// 아래는 테스트로 출력해 보기 위한 코드입니다.
-		solution([2,4,6,8,10])
+		console.log(solution('1062509911'))
 	</script>
 </body>
 </html>
