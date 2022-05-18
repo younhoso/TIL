@@ -11,14 +11,14 @@
 
 ------------------------
 
-문제 풀이 1
+문제 풀이
 ```javascript
 function solution(datas){
-	const current = datas.indexOf(3) //indexOf는 특정 원소의 위치를 탐색
+	const current = datas.indexOf(4) //indexOf는 특정 원소의 위치를 탐색
 	const next = (datas.length -1 !== current) ? (current + 1) % datas.length : null
 	const prev = current - 1;
 
-	console.log(datas[prevIndex])
-	console.log(datas[nextIndex])
+	console.log(datas[prev])
+	console.log(datas[next])
 }
 ```
