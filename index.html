@@ -12,16 +12,16 @@
 		// charCodeAt은 문자열중 하나를 선택하여 아스키코드 번호로 변환해주는 함수이며,
 		// fromCharCode는 아스키코드번호를 받아 문자열을 구성해주는 함수입니다.
 		function solution(s, n){
-			return [...s].map(value => {
-					if (value === " ") return value;
-					return value.toUpperCase().charCodeAt() + n > 90
-					? String.fromCharCode(value.charCodeAt() + n - 26)
-					: String.fromCharCode(value.charCodeAt() + n)
-			}).join("");
+				return [...s].map(value => {
+						if (value === " ") return value;
+						return value.toUpperCase().charCodeAt() + n > 90
+						? String.fromCharCode(value.charCodeAt() + n - 26)
+						: String.fromCharCode(value.charCodeAt() + n)
+				}).join("");
 		}
 
 		// 아래는 테스트로 출력해 보기 위한 코드입니다.
-		console.log(solution("", 1))
+		console.log(solution("z", 1))
 	</script>
 </body>
 </html>
