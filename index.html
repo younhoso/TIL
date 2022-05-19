@@ -9,21 +9,19 @@
 <body>
 	
 	<script>
-		function solution(new_id) {
-				const answer = new_id
-						.toLowerCase() // 1
-						.replace(/[^\w-_.]/g, '') // 모든 특수문자 찾아 빈문자로 변경
-						.replace(/\.+/g, '.') // 문장의 .(점)여러게 찾아 한개의 점으로 변경
-						.replace(/^\.|\.$/g, '') // 문장의 맨처음 또는 맨끝의 .(점)을 찾아 빈문자로 변경
-						.replace(/^$/, 'a') // 문장의 시작과 끝중에서 'a'로 변경
-						.slice(0, 15).replace(/\.$/, ''); // 문장의 맨끝 .(점)을 찾아 빈문자로 변경
-				const len = answer.length;
-				//answer길이가 2보다 작은경우
-				return len > 2 ? answer : answer + answer.charAt(len - 1).repeat(3 - len); //"a" + "a"를 2만큰 반복하고
+		// charCodeAt은 문자열중 하나를 선택하여 아스키코드 번호로 변환해주는 함수이며,
+		// fromCharCode는 아스키코드번호를 받아 문자열을 구성해주는 함수입니다.
+		function solution(s, n){
+			return [...s].map(value => {
+					if (value === " ") return value;
+					return value.toUpperCase().charCodeAt() + n > 90
+					? String.fromCharCode(value.charCodeAt() + n - 26)
+					: String.fromCharCode(value.charCodeAt() + n)
+			}).join("");
 		}
 
 		// 아래는 테스트로 출력해 보기 위한 코드입니다.
-		console.log(solution("=.="))
+		console.log(solution("", 1))
 	</script>
 </body>
 </html>
